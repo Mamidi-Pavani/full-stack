@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+    <style>
+        body{
+            background-color: rgb(225, 229, 232);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e6c4d7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        .contact-info{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+        textarea{
+            width: 95%; 
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none; 
+        }
+        .submit{
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width:100px;
+            height:40px;
+            font-size: 20px;
+            background-color: cadetblue;
+
+        }
+        footer{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+    <p> <i class="fa-solid fa-phone"></i>Phone: +91 7386261643 </p>
+       <p> <i class="fa-solid fa-message" ></i>   Chat:<br><br>
+        <textarea name="chat" id="chat" cols="40" rows="10" placeholder="You can chat with us"></textarea></p>
+        </div>
+        <button class="submit" onclick="submitform()">Submit</button>
+    </div>
+        <footer>
+    For any queries please mail to <br> <br>
+    <a href="mail to:22pa1a0594@vishnu.edu.in">22pa1a0594@vishnu.edu.in</a> </p>
+        </footer>
+    
+    <script>
+        function submitform(){
+            alert("Form Submitted..!");
+        }
+    </script>
+</body>
+</html>

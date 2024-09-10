@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to End Hunger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: palevioletred;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(151, 244, 12, 0.548);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .donation-options label {
+            margin: 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .btn-give-now {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-give-now:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><br><br><br><br>
+        <h1>Join the Solution to End Hunger</h1>
+        <!--<div class="video-container">-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_l-un8uNXq0?si=MI5NLZGT-pAO9D_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--</div>-->
+        <p>Your gift helps us feed families, empower hands, and enrich communities. Together we can be one step closer to ending worldwide hunger.</p>
+        <div class="donation-options">
+            <input type="radio" name="donation" id="donate5000" value="5000">
+            <label for="donate5000">5000/-</label>
+            <input type="radio" name="donation" id="donate2500" value="2500">
+            <label for="donate2500">2500/-</label>
+            <input type="radio" name="donation" id="donate1000" value="1000">
+            <label for="donate1000">1000/-</label>
+            <input type="radio" name="donation" id="donate500" value="500">
+            <label for="donate500">500/-</label>
+            <input type="radio" name="donation" id="donate300" value="300">
+            <label for="donate300">300/-</label>
+            <input type="radio" name="donation" id="donate200" value="200">
+            <label for="donate200">200/-</label>
+            <input type="radio" name="donation" id="donate100" value="100">
+            <label for="donate100">100/-</label>
+            <input type="radio" name="donation" id="donate50" value="50">
+            <label for="donate50">50/-</label>
+        </div>
+        <input type="number" placeholder="Enter custom amount" id="customAmount">
+        <br><br>
+        <button type="submit" class="btn-give-now" onclick="redirectToForm()">Give Now</button>
+    </div>
+
+    <script>
+        function redirectToForm() {
+            window.location.href = 'form.html';
+        }
+    </script>
+</body>
+</html>

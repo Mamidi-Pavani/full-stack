@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login-container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    background-color: gainsboro;
+  }
+
+  .form {
+    text-align: left;
+  }
+
+  .login-container h2 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+  }
+
+  /* Center inputs inside the container and add equal space */
+  .form input, .form textarea {
+    width: 90%; /* Ensures equal space on both sides */
+    margin: 0 auto 15px; /* Centers the inputs */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%; /* Make button take full width */
+    margin-top: 10px;
+  }
+
+  .form button:hover {
+    background-color: #0056b3;
+  }
+
+  .form .forgot-password {
+    color: #999999;
+  }
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h2>FOOD SOURCE</h2>
+  
+  <form class="form" id="foodSourceForm">
+    <label for="name"><b>Name of the Restaurant/Grocery/Other:</b></label>
+    <input type="text" id="name" name="name" placeholder="Enter restaurant/grocery store/others name" required>
+    
+    <label for="address"><b>Address:</b></label>
+    <textarea name="address" id="address" cols="52" rows="5" placeholder="Enter restaurant/grocery/other address" required></textarea>
+    
+    <label for="number"><b>No. of Food Items:</b></label>
+    <input type="text" id="number" name="number" placeholder="Enter no. of food items" required>
+    
+    <label for="food"><b>Food Details:</b></label>
+    <textarea name="food" id="food" cols="52" rows="8" placeholder="Enter food item-quantity" required></textarea> 
+    
+    <button type="button" onclick="validateForm()">Submit</button>
+  </form>
+</div>
+
+<script>
+  function validateForm() {
+    const form = document.getElementById('foodSourceForm');
+    if (form.checkValidity()) {
+      // Form is valid, redirect to formSubmit.html
+      window.location.href = 'formSubmit.html';
+    } else {
+      // Form is invalid, show an alert or handle error
+      alert('Please fill out all required fields.');
+    }
+  }
+</script>
+</body>
+</html>
